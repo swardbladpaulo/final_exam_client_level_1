@@ -15,9 +15,12 @@ You need to fetch the data from the Viaplay API and find the appropriate attribu
 The API is located at:
 
 ```
-https://cors-anywhere.herokuapp.com/https://content.viaplay.se/pc-se/serier/samtliga
+https://content.viaplay.se/pc-se/serier/samtliga
 ```
-To make calls to this API inside our application we need to use a proxy, which is what you see in front of the Viaplay URL. 
+We have provided you with a fixure of the response that this request will yield. You can find the response here:
+[Github Gist](https://gist.github.com/tochman/4b49fda022106423f8e9257e4435aa43#file-viaplay_response-json)
+
+If you want to, you can also look at the response object in a browser.
 
 The TV series listings can be found at: 
 ```js
