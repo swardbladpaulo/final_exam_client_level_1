@@ -10,7 +10,6 @@ const DisplayIndexList = () => {
   let displaySeries
   if (tvSeries) {
     displaySeries = tvSeries.map((tvShow) => {
-      debugger
       return (
         <div id='display-show'>
           <img data-cy='image' src={tvShow.content.images.landscape.url}></img>
@@ -18,7 +17,11 @@ const DisplayIndexList = () => {
       )
     })
   }
-  return <div id="content-box" data-cy='index'>{displaySeries}</div>
+  return (
+    <div id='content-box' data-cy='index'>
+      {displaySeries}
+    </div>
+  )
 }
 
 export default DisplayIndexList
