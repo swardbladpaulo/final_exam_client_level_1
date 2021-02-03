@@ -9,6 +9,14 @@ body {
   padding: 10px;
 }
 #logo {
-  width: 15%;
+  width: 10%;
   margin-left: 100px;
+}
+#footer {
+  background-color: #242947;
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  bottom: 0%;
+  position: absolute;
 }
