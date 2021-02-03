@@ -12,17 +12,9 @@ describe('display list of series', () => {
 
   it('successfully view all series', () => {
     cy.get('[data-cy= "index"]').within(() => {
-      cy.get(">div").each((_, index) => {
-        cy.get(`[data-cy= "index-${index + 1}"]`).within(() => {
-          cy.get('[data-cy= "image"]').should("exist");
-        })
+      cy.get('>div').each((_, index) => {
+        cy.get('[data-cy= "image"]').should('exist')
       })
-    });
-  });
-
-
-
-
-
-
+    })
+  })
 })
